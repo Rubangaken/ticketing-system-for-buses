@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>my personal website</title>
+</head>
+<body>
+    <header>
+        <div id="main">
+            <div class="logo"></div>
+            <nav>
+                <ul>
+                  <li><a href="" class="active">Home</a></li> 
+                   <li><a href="#contactUs" >Contact Us</a</li>                   
+                    <li> <a href="#" id="registerButton">Sign Up</a></li> 
+                     <li><a href="display.php">Passenger Details</a></li> 
+                     <li> <a href="#aboutUs">About Us</a></li>
+                    <li><button id="show-login">LOGIN</button></li>
+                </ul>
+                
+            </nav>
+            
+        </div>
+        <div class="text">
+            <h1>Cruise </h1>
+            <h1>Travel Agency</h1>
+            <span></span>
+            <p>Come and travel to the ends of the world</p>
+            <br>
+            <input type="button" class="btn" value="ORDER NOW">
+        </div>
+    </header>
+<!-- mission us section -->
+<section id="OurMission">
+  <h3 class="subHeading">OUR MISSION</h3>
+      <div class="aboutSection">
+
+            <div class="leftImage">  
+              <img src="pics/pic1.jpg" alt="hero Image">
+            </div>
+
+               <div class="rightText"> 
+                 <h2>Cruise Travel Agency Welcomes You!</h2>              
+<p>Accessibility: Ensuring that people of all abilities can use the bus system comfortably and without barriers.</p>
+<p>Reliability: Offering dependable schedules and routes so that passengers can plan their journeys effectively.</p>
+<p>Affordability: Keeping fares reasonable to make public transportation an accessible option for all socioeconomic groups.</p>
+<p>Environmental Sustainability: Promoting eco-friendly practices such as using clean energy sources and reducing emissions.</p>
+<p>Community Integration: Connecting different areas within a city or region to enhance mobility and economic opportunities for residents.</p>
+<p>Customer Satisfaction: Providing excellent customer service and addressing passenger feedback to improve the overall experience.
+</p>
+               </div>           
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+
+
+
+  <section id="aboutUs">
+    <h3 class="subHeading">About Us</h3>
+        <div class="aboutSection">
+  
+              <div class="leftImage">  
+                <img src="pics/hero.jpg" alt="hero Image">
+              </div>
+  
+                 <div class="rightText"> 
+                   <h2>About Cruise Travel Agency</h2>
+                   <p>
+                    At our bus transport company, we priotise your confort and satisfaction above all else. 
+                    We strive to make your journey as enjoyeable as possible, with our friendly staff and dedication 
+                    to excellence, you will see why passengers choose us always.
+          
+                   </p>
+                   <p>
+                    
+                   </p>
+                   <p>
+                    Travelling with us means more than just getting from A to B, its a about the journey itself. 
+                    Striking up a conversation with fellow passengers, our buses foster a sense of community and adventure. 
+                    Discover the joy of travelling by bus with us today.
+          
+                   </p>
+                   <p>
+                    Safety is our top priority, and we go above and beyond to ensure that you arive at your destination 
+          securely.	
+                   </p>
+                   <p>
+                    Our experienced drivers undergo maximum training and adhere to strict safety protocols, 
+                    while our buses are equiped with advanced technology to monitor road conditions and maintain optimal 
+                    performance. Rest easy knowing that you're in the good hands with us!!
+                  </p>
+          
+          
+                 </div>           
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+<div class = "feedback">
+  <div class ="fedback">
+    <h3 style="margin-left: 500px;">Customer Feedback</h3>
+  </div>
+  <div>
+  <form action = 'insertComment.php' method = 'POST' style="margin-bottom: 30px;">
+    <label>Name</label><br>
+    <input type="text" name="name">
+    <br><br>
+
+    <label>Email</label><br>
+    <input type="text" name="email">
+    <br><br>
+
+  <label>Customer Feedback</label><br>
+    <textarea id=message name= "customerFeedback" rows="4" required></textarea>
+    <br><br>
+
+    <input type="Submit" name="Submit"><br>
+  </form>
+  </div>
+</div>
+ <!-- Footer Section -->
+    
+ <section id="contactUs">
+
+  <footer class="footer">
+    <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Contact us: <a href="mailto:rubangakenebriandavid8@gmail.com">lasedtopgun@gmail.com</a></p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Address: Ntinda Kampala, North Eastern Kampala, UG, 1010</p>
+    </div>
+    <div class="navigation-menu">
+        <h3>Navigation Menu</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+            <li><a href="#OurMission">Our Mission</a></li>
+        </ul>
+    </div>
+    <div class="social-media">
+        <h3>Our Socials</h3>
+        <ul style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+            <li><a href="https://www.facebook.com/profile.php?id=100090835751126&mibextid=ZbWKwL"><img src="pics/facebook.png" alt="">Facebook</a></li>
+            <li><a href="https://twitter.com/b1r2i3AN"><img src="pics/twitter.png" alt="">Twitter</a></li>
+            <li><a href="https://mail.google.com"><img src="pics/communication.png" alt="">Gmail</a></li>
+            <li><a href="tel:+256770850292"><img src="pics/telephone.png" alt="">Call Us</a></li>
+        </ul>
+    </div>
+</footer>
+      
+  </section>
+
+  
+  <!--js implementation-->
+  <div class="login-popup" id="registerForm">
+    
+    <form action ="insertSignUp.php" method ="POST" id="FORM" style="background-color: rgba(25, 90, 154, 0.433);">
+      <h2>Customer Details</h2>
+      <label for="Uname">User Name:</label>
+      <input type="text"  name="userName" id="userName" ><br>
+      <label for="name">Name:</label>
+      <input type="text"  name="Name" id="Name"><br>
+      <label for="contact">Contact :</label>
+      <input type="text"  name="contact" id="contact"><br>
+      <label for="address">Address :</label>
+      <input type="address" name="address" id="address"><br >
+      <button type="submit" class="form-Element" >Register</button>  
+      <button type="button"  class="form-Element" onclick="clearForm()">Cancel</button>
+    </form>
+  </div>
+  
+ 
+    
+
+
+<div class="popup">
+<form action="insertloginDetail.php" method="get"  style="background-color: rgba(25, 90, 154, 0.433);">
+    <div class="close-btn">&times;</div>
+    <div class="form" >
+      <h2>LOG IN</h2> 
+      <div class="form-element">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter Name">
+        </div>
+
+
+      <div class="form-element">
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Enter Email">
+      </div>
+  
+
+  <div class="form-element">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password">
+  </div>
+
+  <div class="form-element">
+      <input type="checkbox" id="remember-me">
+      <label for="remember-me">remember me</label>
+  </div>
+
+  <div class="form-element">
+      <button type="submit">Sign in</button>
+  </div>
+
+  <div class="form-element">
+      <a href="#">Forgot password?</a>
+  </div>
+ </div>
+</form>
+</div>
+  <script src="index.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
